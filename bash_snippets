@@ -1,0 +1,19 @@
+#   Snippets I include in my .bashrc file.  After adding items, remember to
+#   refresh it again by adding it to the source.
+
+source .bashrc
+
+#   Basic aliases that are common:
+
+alias la='ls -a'
+alias ll='ls -l'
+
+#   I always prefer to always have the long view
+
+alias ls='ls -l'
+
+#   I like to keep an eye on my storage.  Adjust to your storage assignment
+
+alias storage='echo "df -h"
+	df -h /dev/sda{2,4}'
+
