@@ -1,0 +1,30 @@
+#   My personal snippets I include in my .bashrc file for any VPS.
+#   This file can be directly included as written.
+#   After adding items, run:
+#   source .bashrc
+
+#   I always prefer the long list results
+
+alias ls='ls -l'
+
+#   I like to keep an eye on my storage.  Adjust to your storage assignment
+
+alias storage='echo "df -h"
+    df -h /dev/sda
+    '
+
+#   shortcut to do apt updates
+
+alias aptup='
+    FILE=/home/"$USER"/.lastup
+    if [ ! -f "$FILE" ]; then
+        touch "$FILE"
+        echo "First run of aptup.  ~/.lastup file created"
+    else
+        echo "Last update was:"
+        tail -n 1 "$FILE"
+        echo
+    fi
+    date >> "$FILE"
+    sudo apt update && sudo apt list --upgradable && sudo apt upgrade
+    '
