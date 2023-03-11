@@ -1,0 +1,15 @@
+#   If you are in a git folder, it will output the branch you are currently working in.
+#   This must be put before the PS1 declaration.
+
+parse_git_branch() {
+    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+
+#   This is an example PS1 bash command line prompt that prints three lines.  It includes
+#   the time, emojis and the working directory, and the user@hostname with color.
+#   Use a bash generator to make it easy:
+#   https://bashrcgenerator.com/
+#   Copy and paste emojis into the line.  I use:
+#   https://emojipedia.org/
+
+export PS1="\n \[$(tput bold)\]\[\033[7;49;32m\] \t - \d \[$(tput sgr0)\]\[\033[0;49;32m\]\n ⌨  🇪 🇲 🇴 🇯 🇮 🖥️  \$PWD\[$(tput sgr0)\] \[\033[33m\]\$(parse_git_branch)\[\033[00m\]\n \[$(tput b>
