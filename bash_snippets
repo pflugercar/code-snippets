@@ -17,3 +17,28 @@ alias ls='ls -l'
 alias storage='echo "df -h"
 	df -h /dev/sda{2,4}'
 
+#   When adding snippets, I add them to a menu of items.  I use them frequently,
+#   but I like to keep a reference of them in case I move between systems and
+#   want to document what I have added.  I create a "snippets" menu.
+
+alias snippets='
+        echo ""
+        echo "Helpful terminal commands:"
+        echo "--------------------------"
+        echo "snippets = this command"
+        echo "ffmpeg = record, convert, stream audio and video"
+        echo "magick convert = resize, crop, etc..."
+        echo "speedtest = check internet speed"
+        echo "securevnc = run this and add user@ipaddress or the config Host name"
+        echo "    before connecting VNC through localhost"
+        echo ""
+        echo "System management commands"
+        echo "--------------------------"
+        echo "storage = df -h /dev/sda{2,4} - storage space"
+        echo "gdu = disk usage analyzer"
+        echo "cpufetch = neofetch, but for cpu data"
+        echo "bpytop = htop replacement"
+        echo ""
+        echo ""
+        echo "FUN!!!"
+
