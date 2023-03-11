@@ -23,6 +23,10 @@ https://cppreference.com/
 
 https://www.python.org/
 
+# Markdown *.md Reference
+
+https://wordpress.com/support/markdown-quick-reference/
+
 # Windows Installer
 
 https://ninite.com/
