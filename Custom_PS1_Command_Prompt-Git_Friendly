@@ -9,6 +9,7 @@ parse_git_branch() {
 #   the time, emojis and the working directory, and the user@hostname with color.
 #   Use a bash generator to make it easy:
 #   https://bashrcgenerator.com/
+#   Install emoji font
 #   Copy and paste emojis into the line.  I use:
 #   https://emojipedia.org/
 
